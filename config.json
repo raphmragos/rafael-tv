@@ -3,24 +3,39 @@
   "inbounds": [
     {
       "port": 10000,
-      "listen": "127.0.0.1",
+      "listen": "0.0.0.0",
       "protocol": "trojan",
       "settings": { "clients": [{ "password": "virgozki" }] },
-      "streamSettings": { "network": "ws", "wsSettings": { "path": "/virgozki" } }
+      "streamSettings": {
+        "network": "ws",
+        "security": "none",
+        "wsSettings": { "path": "/trojan-ws" }
+      }
     },
     {
       "port": 10001,
-      "listen": "127.0.0.1",
+      "listen": "0.0.0.0",
       "protocol": "vmess",
-      "settings": { "clients": [{ "id": "virgozki" }] },
-      "streamSettings": { "network": "ws", "wsSettings": { "path": "/virgozki" } }
+      "settings": { "clients": [{ "id": "virgozki-1234-5678-90ab-cdef01234567" }] },
+      "streamSettings": {
+        "network": "ws",
+        "security": "none",
+        "wsSettings": { "path": "/vmess-ws" }
+      }
     },
     {
       "port": 10002,
-      "listen": "127.0.0.1",
+      "listen": "0.0.0.0",
       "protocol": "vless",
-      "settings": { "clients": [{ "id": "virgozki" }] },
-      "streamSettings": { "network": "ws", "wsSettings": { "path": "/virgozki" } }
+      "settings": {
+        "clients": [{ "id": "virgozki-1234-5678-90ab-cdef01234567" }],
+        "decryption": "none"
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "none",
+        "wsSettings": { "path": "/vless-ws" }
+      }
     }
   ],
   "outbounds": [{ "protocol": "freedom" }]
