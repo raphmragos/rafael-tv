@@ -25,4 +25,4 @@ jobs:
         with:
           context: .
           push: true
-          tags: raphmragos/freedata:latest
+          tags: raphmragos/rafael-tv-github:latest
