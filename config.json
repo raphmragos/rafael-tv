@@ -1,4 +1,4 @@
-{
+l{
   "log": { "loglevel": "none" },
   "inbounds": [
     {
@@ -16,7 +16,7 @@
       "port": 10001,
       "listen": "0.0.0.0",
       "protocol": "vmess",
-      "settings": { "clients": [{ "id": "virgozki-1234-5678-90ab-cdef01234567" }] },
+      "settings": { "clients": [{ "id": "15f7e8ea-7b56-45d4-93af-31f3c592fdf1" }] },
       "streamSettings": {
         "network": "ws",
         "security": "none",
@@ -28,7 +28,7 @@
       "listen": "0.0.0.0",
       "protocol": "vless",
       "settings": {
-        "clients": [{ "id": "virgozki-1234-5678-90ab-cdef01234567" }],
+        "clients": [{ "id": "15f7e8ea-7b56-45d4-93af-31f3c592fdf1" }],
         "decryption": "none"
       },
       "streamSettings": {
